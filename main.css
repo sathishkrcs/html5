@@ -1,0 +1,125 @@
+body, div, html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+header, footer {
+	height: 30px;
+	border: 1px solid #CCC;
+	display: inline;
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+main div {
+  border: 1px solid;  
+}
+
+.ctsForm {
+	flex: 1;
+	padding: 1%;
+	overflow: auto; 
+}
+
+.ctsVideo {
+	flex: 1;
+}
+
+label, input {
+	padding: 5px;
+}
+
+input, select {
+	border: 1px solid #CCC;
+}
+
+label {
+	width: 150px;
+	display: inline-table;
+}
+
+.mc {
+	column-count: 3;
+}
+
+
+@media screen and (max-width: 768px) {
+	body {
+		background-color: #777;
+	}
+	
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+    }
+	.ctsForm {
+		flex: 1;
+		padding: 1%;
+		overflow: auto;
+		min-height: 500px;		
+	}
+
+	.ctsVideo {
+		flex: 1;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: #CCC;
+	}
+	
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+    }
+	.ctsForm {
+		flex: 1;
+		padding: 1%;
+		overflow: auto;
+		height: 500px;
+	}
+
+	.ctsVideo {
+		flex: 1;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		background-color: #bbe9ff;
+	}
+		main {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		overflow: auto;
+    }
+}
+
+@media print {
+	header, footer {
+		display: none !important;
+	}
+	.ctsVideo {
+		display: none !important;
+	}
+}
+
+
+

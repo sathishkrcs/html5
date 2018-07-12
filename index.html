@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--html manifest="cts.appcache"-->
+<html>
+<head>
+<title>HTML 5 Assessment</title>
+<link href="main.css" rel="stylesheet" media="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<header> 
+Astute International
+</header>
+
+<main>
+
+<div class="ctsForm">
+<form action="/signup" method="post">
+  <p>
+    <label>Title</label>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Mr
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Mrs
+    </label>
+    <label>
+      <input type="radio" name="title" value="miss">
+      Miss
+    </label>
+  </p>
+  <p>
+  <label>Browsers</label>
+  <input type="text" list="browsers">
+  <datalist id="browsers">
+     <option value="Firefox">
+	 <option value="Chrome">
+	 <option value="Internet Explorer">
+  </datalist>
+  </p>
+  <p>
+    <label>First name</label>
+    <input type="text" name="first_name">
+  </p>
+  <p>
+    <label>Last name</label>
+    <input type="text" name="last_name">
+  </p>
+    <p>
+    <label>Name Length - 6</label>
+    <input type="number" min=0 max=10 step=2 name="name length">
+  </p>
+  <p>
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Email" required>
+  </p>
+  <p>
+    <label>Phone number</label>
+    <input type="tel" name="phone">
+  </p>
+  <p>
+    <label>Password</label>
+    <input type="password" name="password">
+  </p>
+  <p>
+    <label>Alpha Numeric</label>
+    <input type="text" name="alphanumeric" pattern="[a-zA-Z0-9\s]">
+  </p>
+  <p>
+    <label>Country</label>
+    <select>
+      <option>China</option>
+      <option>India</option>
+      <option>United States</option>
+      <option>Indonesia</option>
+      <option>Brazil</option>
+    </select>
+  </p>
+  <p>
+    <button>Sign up</button>
+    <button type="reset">Reset form</button>
+  </p>
+</form>
+</div>
+<div class="ctsVideo">
+<div class="mc">
+Multiple columns are a great way to make better use of your content canvas area, especially for the breakpoints at the larger viewports.
+
+Working on a mobile first approach to responsive design you will often define the layout of the content in a linear format and then, as you add in additional breakpoints for the larger viewports, you can simply add in the multiple columns as shown in the example below.
+</div>
+
+
+<video controls>
+	<source src="vp.mp4" type="video/mp4">
+Your browser is not supporting video player
+</video>
+
+
+</div>
+
+</main>
+
+<footer>
+@Astute 2018
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
