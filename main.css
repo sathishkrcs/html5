@@ -53,6 +53,9 @@ label {
 	column-count: 3;
 }
 
+.usup {
+	color: red;
+}
 
 @media screen and (max-width: 768px) {
 	body {

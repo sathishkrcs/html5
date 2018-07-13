@@ -8,7 +8,7 @@
 </head>
 
 
-<body>
+<body onload="isVideo()">
 
 <div class="wrapper">
 
@@ -98,7 +98,7 @@ Working on a mobile first approach to responsive design you will often define th
 
 <video controls>
 	<source src="vp.mp4" type="video/mp4">
-Your browser is not supporting video player
+<h2 class="usup">Your browser is not supporting video player</h2>
 </video>
 
 
@@ -114,5 +114,16 @@ Your browser is not supporting video player
 
 </body>
 </html>
+
+<script>
+
+function isVideo() {
+   var src = document.getElementsByTagName("source");
+   console.log(src[0].src);
+}
+
+</script>
+
+
 
 
