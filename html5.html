@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Introduction</title> 
+
+</head>
+
+<body>
+<header>Astute Interactive</header>
+
+
+<registrationForm>
+<form method="POST">
+<input type="text" placeholder="Name" required size=40>
+<input type="text" placeholder="Username" required maxlength=20>
+<input type="password" placeholder="Password" required>
+<input type="password" placeholder="Re-Enter Password" required>
+
+<input type="text" placeholder="Phone - Max/Min length Should be 10"  maxlength=10 minlength=10  required>
+<input type="number" placeholder="Age - Max=50 and Min=10"  min=10 max=50  required>
+ <textarea id="t3" name="msg" size=140 maxlength="340" rows="5" placeholder="Any Comments!"></textarea>
+<br>
+
+
+<input type="email" placeholder="Email" required maxlength=30 autocomplete="off">
+<input type="submit" value="Register">
+</form>
+</registrationForm>
+
+<aside>  </aside>
+<article>  </article>
+
+<h1>Canvas</h1>
+<canvas id="myCanvas" width="500" height="50" style="border:1px solid #000000;">
+</canvas>
+
+<h1>Video</h1>
+<video width="320" height="240" controls >
+  <source src="f://videoplayback.mp4" type="video/mp4">
+</video>
+
+<h1>Geo Location</h1>
+navigator.geolocation.getCurrentPosition(function(position) { console.log(position)})
+<footer>2018 Astute Interactive</footer>
+
+</body>
+
+</html>
+
+
+<style>
+
+ input:invalid, textarea:invalid {
+    
+ }
+ 
+ input:focus:invalid {
+  border: 1px dotted red;
+}
+ 
+
+ section, footer, aside, nav, main, article, figure, registrationForm {
+    display: block; 
+	min-height: 50px;
+	background-color: #FFF;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 1%;
+}
+
+registrationForm {
+   margin:auto;
+   width: 30%;
+   border: 1px dotted #777;
+   margin-bottom: 10px;
+   padding:10px;
+}
+
+input , textarea{
+  width: 350px;
+  display: block;
+  padding:5px;
+  border: 1px solid #777;
+  margin-bottom: 5px;
+}
+
+footer {
+	bottom: 0px;
+	position: relative;
+	min-height: 1px;
+	border: 1px solid #CCC;
+	margin-top: 3%;
+	width: 99%;
+	text-align: center;
+	background-color: #FFF;
+	color: #4267b2;
+	padding: 5px;
+	text-align: right;
+}
+
+header {
+   text-align: left;
+    background-color: #FFF;
+    padding: 5px;
+    color: #4267b2;
+    width: 28%;
+    min-height: 1px;
+    font-size: 18px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 5px;
+    transform: rotate(-17deg);
+    top: -1%;
+}
+
+body {
+    background: #fff;
+    color: #1d2129;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 3px;
+    padding: 0;
+    unicode-bidi: embed;
+}
+ 
+body,button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+input[type=submit] {
+   width: 150px;
+}
+</style>
